@@ -1,7 +1,6 @@
 {
   "name": "a-test-button",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf ./dist && npx rollup -c",
