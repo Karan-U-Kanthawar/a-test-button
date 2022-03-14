@@ -10,9 +10,15 @@ const Button = styled.button`
 `;
 
 export const SdkButton = () => {
+  const [count, setCount] = React.useState(0);
+
+  const handleClick = () => {
+    setCount(() => count + 1);
+  };
+
   return (
     <React.Fragment>
-      <Button>karan</Button>
+      <Button onClick={handleClick}>karan {count}</Button>
     </React.Fragment>
   );
 };
