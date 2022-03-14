@@ -9,13 +9,12 @@ const Button = styled.button`
   border-radius: 3px;
 `;
 
-export const SdkButton = () => {
-  const [count, setCount] = React.useState(0);
+interface Props {
+  count: number;
+  handleClick: () => void;
+}
 
-  const handleClick = () => {
-    setCount(() => count + 1);
-  };
-
+export const SdkButton: React.FC<Props> = ({ count, handleClick }) => {
   return (
     <React.Fragment>
       <Button onClick={handleClick}>karan {count}</Button>

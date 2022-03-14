@@ -1,1 +1,7 @@
-export declare const SdkButton: () => JSX.Element;
+import React from "react";
+interface Props {
+    count: number;
+    handleClick: () => void;
+}
+export declare const SdkButton: React.FC<Props>;
+export {};
